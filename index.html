@@ -13,6 +13,7 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="science.html">Science</a>
+      <a href="status.html">Status</a>
       <a href="how-to.html">How To</a>
       <a href="team.html">Team</a>
     </nav>
@@ -35,16 +36,53 @@
     <section class="facts-section">
       <div class="facts-content">
         <div class="hero__card">
-          <p class="label">Fast facts</p>
-          <ul>
-            <li>Millimeter-wave grating spectrometers cooled to a few hundred mK</li>
-            <li>Transition edge sensor (TES) arrays detect redshifted [CII] line emission</li>
-            <li>Mounted on the ARO 12-meter telescope at Kitt Peak, Arizona</li>
-            <li>Targets galaxies during cosmic dawn (roughly z ~ 5 - 9)</li>
-          </ul>
+          <h3>FAST FACTS</h3>
+          <div class="metrics">
+            <div class="metric">
+              <span>Science target</span>
+              <p>Uses line-intensity mapping of [CII] and CO emission to trace star formation and galaxy evolution from the Epoch of Reionization through cosmic noon.</p>
+            </div>
+            <div class="metric">
+              <span>Cooling system</span>
+              <p>Closed-cycle cryostat with 4K–1K–300mK stages and dual-stage 250/300 mK refrigerator for optimal performance.</p>
+            </div>
+            <div class="metric">
+              <span>Spectrometers</span>
+              <p>32 independent grating spectrometers, each with 210 facets and a spectral resolving power of R ≈ 200 across the 186–324 GHz frequency range.</p>
+            </div>
+            <div class="metric">
+              <span>Detectors</span>
+              <p>2-D arrays of transition edge sensor bolometers for background-limited sensitivity in detecting [CII] emission.</p>
+            </div>
+          </div>
         </div>
         <div class="instrument-image">
-          <img src="https://via.placeholder.com/400x300?text=Instrument+Image" alt="TIME Instrument">
+          <img src="images/homepage/time.jpg" alt="TIME Instrument">
+        </div>
+      </div>
+    </section>
+
+    <section id="science" class="panel">
+      <div class="section-head">
+        <p class="eyebrow">Science goals</p>
+        <h2>What TIME will answer</h2>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>When did stars light up?</h3>
+          <p>Trace how quickly star formation rose after the Big Bang and how metals enriched the interstellar medium.</p>
+        </div>
+        <div class="card">
+          <h3>How did structure grow?</h3>
+          <p>Compare intensity maps to simulations to understand how gas, dust, and dark matter evolved together during reionization.</p>
+        </div>
+        <div class="card">
+          <h3>Compare with observatories</h3>
+          <p>TIME’s wide-field maps complement JWST and ALMA deep views, linking detailed galaxies to large-scale environments.</p>
+        </div>
+        <div class="card">
+          <h3>Secondary science</h3>
+          <p>Measurements can constrain the Sunyaev–Zel’dovich effect in galaxy clusters and probe interstellar medium physics.</p>
         </div>
       </div>
     </section>
@@ -57,11 +95,11 @@
       <div class="grid two">
         <div class="card">
           <h3>Intensity mapping</h3>
-          <p>Instead of finding individual galaxies, TIME measures the integrated [C II] glow across wide sky areas. This reveals how star formation and metal enrichment progressed across cosmic time.</p>
+          <p>Instead of finding individual galaxies, TIME measures the integrated [CII] glow across wide sky areas. This reveals how star formation and metal enrichment progressed across cosmic time.</p>
         </div>
         <div class="card">
           <h3>Cosmic dawn window</h3>
-          <p>The redshifted 158 μm [C II] line arrives at millimeter wavelengths. TIME scans these bands to build three-dimensional tomographic maps of structure in the first billion years.</p>
+          <p>The redshifted 158 μm [CII] line arrives at millimeter wavelengths. TIME scans these bands to build three-dimensional tomographic maps of structure in the first billion years.</p>
         </div>
       </div>
     </section>
@@ -69,7 +107,7 @@
     <section id="instrument" class="panel muted">
       <div class="section-head">
         <p class="eyebrow">Hardware</p>
-        <h2>Purpose-built millimeter spectrometers</h2>
+        <h2>Millimeter Spectrometers</h2>
       </div>
       <div class="grid three">
         <div class="card">
@@ -92,31 +130,6 @@
       </div>
     </section>
 
-    <section id="science" class="panel">
-      <div class="section-head">
-        <p class="eyebrow">Science goals</p>
-        <h2>What TIME will answer</h2>
-      </div>
-      <div class="grid two">
-        <div class="card">
-          <h3>When did stars light up?</h3>
-          <p>Trace how quickly star formation rose after the Big Bang and how metals enriched the interstellar medium.</p>
-        </div>
-        <div class="card">
-          <h3>How did structure grow?</h3>
-          <p>Compare intensity maps to simulations to understand how gas, dust, and dark matter evolved together during reionization.</p>
-        </div>
-        <div class="card">
-          <h3>Synergy with observatories</h3>
-          <p>TIME’s wide-field maps complement JWST and ALMA deep views, linking detailed galaxies to large-scale environments.</p>
-        </div>
-        <div class="card">
-          <h3>Secondary science</h3>
-          <p>Measurements can constrain the Sunyaev–Zel’dovich effect in galaxy clusters and probe interstellar medium physics.</p>
-        </div>
-      </div>
-    </section>
-
     <section id="how-to" class="panel muted">
       <div class="section-head">
         <p class="eyebrow">Field notes</p>
@@ -132,23 +145,6 @@
           <h3>Care for the cryostat</h3>
           <p>Learn cooldown timelines, vacuum checks, and detector readout best practices before an observing run.</p>
           <a class="btn link" href="how-to.html#cryostat">Jump to cryostat tips →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel contact">
-      <div class="section-head">
-        <p class="eyebrow">Get involved</p>
-        <h2>Talks, data releases, and outreach</h2>
-      </div>
-      <div class="grid two">
-        <div class="card">
-          <h3>Outreach & classroom</h3>
-          <p>We share visuals, lesson starters, and Q&A sessions for classrooms and public events. Reach out to collaborate on materials tailored to your audience.</p>
-        </div>
-        <div class="card">
-          <h3>Follow the project</h3>
-          <p>Watch for engineering updates, commissioning milestones, and early science highlights as TIME maps the high-redshift universe.</p>
         </div>
       </div>
     </section>
@@ -180,5 +176,8 @@
       <img src="images/collaborator_logos/UniversityofToronto.jpg" alt="University of Toronto" class="logo">
     </div>
   </div>
+  <footer>
+    <p>TIME — Instrument guides </p>
+  </footer>
 </body>
 </html>
