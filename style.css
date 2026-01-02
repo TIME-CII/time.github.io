@@ -424,6 +424,19 @@ footer {
   margin-top: 5px;
 }
 
+/* pseudo-element hack for nonexistent person-img; works in Firefox but not Safari (which papers over bad image urls) */
+/* modified from https://stackoverflow.com/a/980948 (CC BY-SA 4.0) */
+.person-img::before {
+  display: inline-block;
+  background-image: url(images/TIME_logo.png);
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/* end CSS code with CC BY-SA 4.0 licence for pseudo-element placeholder hack */
+
 .logo {
   width: 70px;
   height: 70px;
